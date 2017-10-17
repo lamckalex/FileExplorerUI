@@ -1,7 +1,9 @@
-<ul>
-  <li *ngFor="let response of responses">
-    <span>{{response.fileName}}</span>
-    <span>{{response.fileSize}}</span>
-    <span>{{response.fileExtension}}</span>
-  </li>
-</ul>
+<mat-list dense>
+  <h3 mat-subheader>Files</h3>
+  <mat-list-item *ngFor="let response of responses">
+    <!-- <mat-icon mat-list-icon>folder</mat-icon> -->
+    <h4 mat-line>{{response.fileName}}</h4>
+    <p mat-line> {{response.fileSize}} mbs</p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>

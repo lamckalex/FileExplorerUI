@@ -1,7 +1,7 @@
 <mat-list dense>
   <h3 mat-subheader>Files</h3>
   <mat-list-item *ngFor="let response of responses">
-    <!-- <mat-icon mat-list-icon>folder</mat-icon> -->
+    <mat-icon mat-list-icon>photo</mat-icon>
     <h4 mat-line>{{response.fileName}}</h4>
     <p mat-line> {{response.fileSize}} bytes</p>
   </mat-list-item>

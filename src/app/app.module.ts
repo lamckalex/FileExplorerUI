@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { WebService } from './services/web-service';
 import { HttpModule } from '@angular/http';
-import { MatListModule } from '@angular/material';
+import { MatListModule, MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -14,8 +14,8 @@ import { MatListModule } from '@angular/material';
     BrowserModule,
     HttpModule,
     BrowserAnimationsModule,
-    MatListModule
-    
+    MatListModule,
+    MatIconModule
   ],
   providers: [
     WebService
